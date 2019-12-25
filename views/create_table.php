@@ -14,6 +14,7 @@
             `image_title` varchar(255) DEFAULT NULL,
             `image_img` text,
             `image_pos` int(5) NOT NULL,
+            `image_order` int(5) NOT NULL,
             `image_time` timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP,
             PRIMARY KEY (`image_id`)
             ) ENGINE=InnoDB AUTO_INCREMENT=5 DEFAULT CHARSET=latin1";

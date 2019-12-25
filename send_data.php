@@ -4,6 +4,7 @@
     $image_url = $_POST['image_url'];
     $image_upload_time = $_POST['image_upload_time'];
     $image_position = $_POST['image_position'];
+    $image_order = $_POST['image_order'];
 
     //name of the table
     $table_name = $wpdb->prefix . "custom_slider";
@@ -17,7 +18,8 @@
             'image_title' => $image_title,
             'image_img' => $image_url,
             'image_time' => $image_upload_time,
-            'image_pos' => $image_position
+            'image_pos' => $image_position,
+            'image_order' => $image_order,
         )
     );
 

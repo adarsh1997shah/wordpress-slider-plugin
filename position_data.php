@@ -30,6 +30,22 @@ if(count($all)>0){
             ),
             //the unique element to be updated using image id
             array(
+                'image_id' => $all[$position[$i]]['image_id']
+            )
+        );
+    }
+}
+
+if(count($all)>0){
+    for($i=0;$i<$row;$i++){
+        $wpdb->update(
+            $table_name, //table name
+            //array of elements to change position into dbms taken from post method
+            array(
+                'image_order' => $position[$i]
+            ),
+            //the unique element to be updated using image id
+            array(
                 'image_id' => $all[$i]['image_id']
             )
         );
@@ -37,6 +53,6 @@ if(count($all)>0){
 }
 
 
-// print_r("Position Switched");
+print_r("Position Switched");
 wp_die();
 ?>

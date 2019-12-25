@@ -50,7 +50,7 @@
     foreach($all_images as $key => $value){
         if($value['image_pos'] == $i){
 ?>
-    <li class="image_container" id="<?php echo "position_".$all_images[$i]['image_pos'] ?>">
+    <li class="image_container" id="<?php echo "position_".$all_images[$i]['image_order'] ?>">
         <div class='show_image_box'>
             <img class='show_image' id="<?php echo $value['image_id'] ?>"  src="<?php echo $value['image_img']?>">
         </div>

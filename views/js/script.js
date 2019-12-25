@@ -56,7 +56,9 @@ jQuery(document).ready(function(){
             var send_data = jQuery("#image_detail_form").serialize();
 
             //the data variable to pass to the function
-            var data = send_data + '&action=send_response' + '&image_position=' + temp;
+            var data = send_data + '&action=send_response' + '&image_position=' + temp + '&image_order=' + temp;
+
+            console.log(data);
 
             //jquery post method to send data to the server
             jQuery.post(the_ajax_send.ajaxurl, data, function(response) {
