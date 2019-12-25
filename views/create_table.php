@@ -17,7 +17,7 @@
             `image_order` int(5) NOT NULL,
             `image_time` timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP,
             PRIMARY KEY (`image_id`)
-            ) ENGINE=InnoDB AUTO_INCREMENT=5 DEFAULT CHARSET=latin1";
+           ) ENGINE=InnoDB AUTO_INCREMENT=59 DEFAULT CHARSET=latin1";
 
         //path that help to include db files
         require_once(ABSPATH."wp-admin/includes/upgrade.php");

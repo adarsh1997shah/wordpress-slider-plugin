@@ -1,5 +1,5 @@
 <?php
-$position = $_POST['position'];
+$position = $_POST['order'];
 // print_r($position);
 
 

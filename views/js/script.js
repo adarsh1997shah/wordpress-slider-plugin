@@ -134,9 +134,11 @@ jQuery(document).ready(function(){
 
         //getting image position
         var image_pos = jQuery(this).parent().parent().attr('id');
+        var image_order = jQuery(this).parent().parent().parent().attr('id');
 
         //sending image id and position to the database to be deleted
-        var data ='&id='+ image_id + '&pos='+ image_pos +'&action=delete_response';
+        var data ='&id='+ image_id + '&pos='+ image_pos + '&order='+ image_order + '&action=delete_response';
+        console.log(data);
 
         jQuery.post(the_ajax_delete.ajaxurl, data, function(response) {
             alert(response);

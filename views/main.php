@@ -50,7 +50,8 @@
     foreach($all_images as $key => $value){
         if($value['image_pos'] == $i){
 ?>
-    <li class="image_container" id="<?php echo "position_".$all_images[$i]['image_order'] ?>">
+    <div id="<?php echo "order_".$all_images[$i]['image_order'] ?>">
+    <li class="image_container" id="<?php echo "position_".$all_images[$i]['image_pos'] ?>">
         <div class='show_image_box'>
             <img class='show_image' id="<?php echo $value['image_id'] ?>"  src="<?php echo $value['image_img']?>">
         </div>
@@ -62,6 +63,7 @@
             <input type="button" class='btn btn_delete' value='DELETE'>
         </div>
     </li>
+    </div>
 <?php
             }
         }
