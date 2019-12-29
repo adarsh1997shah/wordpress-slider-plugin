@@ -78,8 +78,11 @@ jQuery(document).ready(function(){
 
 
 //function to update the data of the image into database
-function edit(e){
-    //function to include wp_custom media
+jQuery(document).ready(function(){
+    var image_id;
+    jQuery(".btn_edit").on("click",function(){
+        image_id = jQuery(this).parent().siblings(".show_image_box").children("img").attr('id');
+        //function to include wp_custom media
         var image = wp.media({
             title : "Update image for Slider",
             multiple : false
@@ -103,11 +106,8 @@ function edit(e){
             //variable to send the serialize data to the server
             var send_data = jQuery("#image_detail_form").serialize();
 
-            //getting id of the current edit button clicked 
-            var image_id = jQuery(this).parent().siblings(".show_image_box").children("img").attr('id');
-
             //the data variable to pass to the function
-            var data = send_data + '&id='+ image_id + '&action=update_response';
+            var data = send_data + '&action=update_response'  + '&id='+ image_id;
 
             console.log(data);
             //jquery post method to send data to the server
@@ -121,7 +121,8 @@ function edit(e){
                 document.getElementById("image_detail_form").reset();
             });
         })
-};
+    })
+});
 
 
 

@@ -20,7 +20,7 @@
         //by ARRAY_A we convert std objet to array object
         ),ARRAY_A 
     );
-    print_r($image_detail);
+    // print_r($image_detail);
 
 
     //wp function to delete the image when delete button is pressed
