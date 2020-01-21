@@ -1,0 +1,33 @@
+{
+    "name": "ideabox/wordpress-slider-plugin",
+    "description": "Slider Component for Wordpress",
+    "authors": [
+        {
+            "name": "Adarsh Shah",
+            "email": "adarshshah01@gmail.com"
+        }
+    ],
+    "require": {
+    
+    },
+    "require-dev": {
+		"squizlabs/php_codesniffer": "^3.5",
+		"wp-coding-standards/wpcs": "^2.2",
+        "phpcompatibility/phpcompatibility-wp": "^2.1",
+        "dealerdirect/phpcodesniffer-composer-installer": "^0.6.0"
+	},
+	"scripts": {
+		"phpcs": [
+			"phpcs -s -p ."
+		],
+		"phpcbf": [
+			"phpcbf -p ."
+		]
+	},
+	"extra": {
+		"scripts-description": {
+			"phpcs": "Analyze code against the WordPress coding standards with PHP_CodeSniffer",
+			"phpcbf": "Fix coding standards warnings/errors automatically with PHP Code Beautifier"
+		}
+	}
+}
