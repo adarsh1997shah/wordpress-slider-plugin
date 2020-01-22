@@ -32,7 +32,7 @@
 	<!-- Text Domain -->
 	<rule ref="WordPress.WP.I18n">
 		<properties>
-			<property name="text_domain" type="array" value="bb-powerpack"/>
+			<property name="text_domain" type="array" value="WordPress-slider-plugin"/>
 		</properties>
 	</rule>
 
